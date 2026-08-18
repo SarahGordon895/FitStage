@@ -4,15 +4,7 @@
 
 FitStage is a drop-in package from [TechMorah Solution LTD](https://techmorahsolutionltd.org) for websites, portals, admin systems, and web apps. It stops phones and tablets from crushing a designed UI into a tall single column. Instead, it keeps the **same placement, same columns, same hierarchy** as the PC — then scales that canvas to the device.
 
-That is the gap most “mobile responsive” frameworks leave open: they reflow. FitStage **preserves**.
-
-| Device | What users usually get | What FitStage does |
-|---|---|---|
-| Computer | Designed layout | Unchanged |
-| Tablet / iPad | Half-stacked, awkward gaps | Same PC composition, fitted to the screen |
-| Phone | Everything vertical | Same PC composition, pinch-zoom if you want a closer look |
-
-A small on-screen control lets anyone switch to a stacked **Readable** layout. The default is **PC layout**.
+That is the gap most "mobile responsive" frameworks leave open: they reflow. FitStage **preserves**. There is no view switcher. Every device gets the computer layout, fitted to the screen.
 
 ---
 
@@ -84,15 +76,10 @@ This is intentional. Traditional responsive CSS *changes* the design. FitStage *
 | Attribute | Default | Meaning |
 |---|---|---|
 | `data-design` | `1280` | PC artboard width in CSS pixels |
-| `data-min-scale` | `0.28` | Smallest initial scale on very narrow phones |
-| `data-mode` | `canvas` | `canvas` = PC layout, `reflow` = stacked |
-| `data-label-canvas` | `PC layout` | Switcher label |
-| `data-label-reflow` | `Readable` | Switcher label |
-
-The chosen mode is stored in `localStorage` (`fitstage-mode`) so each visitor keeps their preference.
+| `data-min-scale` | `0.25` | Smallest scale on very narrow phones |
 
 ```html
-<script src="fitstage.js" data-design="1440" data-label-canvas="Desktop" data-label-reflow="Stacked"></script>
+<script src="fitstage.js" data-design="1280"></script>
 ```
 
 ---
@@ -103,8 +90,6 @@ The chosen mode is stored in `localStorage` (`fitstage-mode`) so each visitor ke
 - Admin portals, dashboards, and back-office systems
 - Payment, SMS, ISP, and operations consoles
 - Any UI you already love on a 13–27" monitor
-
-If a page is a long article that should reflow for reading, use **Readable** on that product — or do not load FitStage.
 
 ---
 
