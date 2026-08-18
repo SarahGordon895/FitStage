@@ -1,0 +1,23 @@
+{
+  "name": "@techmorah/fitstage",
+  "version": "1.0.0",
+  "description": "Keep the desktop UI placement on phones, tablets, and iPads by scaling the PC canvas instead of stacking content vertically.",
+  "main": "dist/fitstage.js",
+  "files": ["dist", "README.md", "LICENSE"],
+  "keywords": [
+    "responsive",
+    "viewport",
+    "desktop-layout",
+    "tablet",
+    "mobile",
+    "ui-parity",
+    "techmorah"
+  ],
+  "author": "TechMorah Solution LTD",
+  "license": "MIT",
+  "homepage": "https://techmorahsolutionltd.org",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/SarahGordon895/FitStage.git"
+  }
+}

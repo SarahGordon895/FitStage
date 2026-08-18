@@ -1,0 +1,14 @@
+{
+  "name": "techmorah/fitstage",
+  "description": "Keep the desktop UI placement on phones, tablets, and iPads by scaling the PC canvas instead of stacking content vertically.",
+  "version": "1.0.0",
+  "type": "library",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Sarah George Gordon",
+      "homepage": "https://sarah-gordon.org"
+    }
+  ],
+  "homepage": "https://techmorahsolutionltd.org"
+}

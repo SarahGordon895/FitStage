@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>FitStage demo — PC layout on every device</title>
+  <script src="../dist/fitstage.js" data-design="1280"></script>
+  <style>
+    :root { font-family: "Segoe UI", system-ui, sans-serif; }
+    body { margin: 0; background: #f0f3f7; color: #122033; }
+    .top {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 18px 40px; background: #050a18; color: #fff;
+    }
+    .grid { display: grid; grid-template-columns: 2fr 1fr 1fr; gap: 20px; padding: 32px 40px; }
+    .card { background: #fff; padding: 24px; border: 1px solid #d8dee6; min-height: 180px; }
+    @media (max-width: 767px) {
+      .grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <header class="top">
+    <strong>FitStage demo</strong>
+    <span>This three-column row stays three columns on a phone in PC layout.</span>
+  </header>
+  <section class="grid">
+    <article class="card"><h2>Primary</h2><p>Same position as on a computer.</p></article>
+    <article class="card"><h2>Aside</h2><p>Not forced under the primary column.</p></article>
+    <article class="card"><h2>Aside</h2><p>Use Readable if you want stacking.</p></article>
+  </section>
+</body>
+</html>
